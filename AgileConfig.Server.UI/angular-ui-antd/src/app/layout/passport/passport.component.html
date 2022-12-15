@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="wrap" [ngClass]="{ min_wrap: layoutWidth < 992 }">
+    <div class="top">
+      <div class="head">
+        <!--<img class="logo" [src]="settingsApp['ApiBaseUrl']+settingsApp['logo_full']">-->
+        <span class="title">{{ settingsApp?.name }}</span>
+      </div>
+      <div class="desc">{{ settingsApp?.description }}</div>
+    </div>
+    <router-outlet></router-outlet>
+    <global-footer [links]="links">
+      <!--Copyright
+      <i nz-icon nzType="copyright"></i> 2019
+      <a href="//www.CaiQiBao.com" target="_blank">CaiQiBao</a>-->
+    </global-footer>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<page-header></page-header>
+
+<div>
+    <st #st [data]="url" [req]="{ lazyLoad: false }" resizable [loading]="false" [columns]="columns">
+        <ng-template st-row="lastEchoTime" let-i>
+            <div title="{{ i.lastEchoTime }}">{{ i.lastEchoTime | amTimeAgo }}</div>
+        </ng-template>
+    </st>
+</div>

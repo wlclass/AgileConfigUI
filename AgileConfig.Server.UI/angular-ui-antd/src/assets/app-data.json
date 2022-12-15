@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "配置中心",
+    "description": "这是配置中心的描述"
+  },
+  "menu": [
+    {
+      "text": "配置中心",
+      "acl": [ "员工" ],
+      "group": true,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "仪表盘",
+          "acl": [ "任务工单管理员" ],
+          "icon": {
+            "type": "icon",
+            "value": "dashboard"
+          },
+          "link": "/dashboard"
+        },
+        {
+          "text": "节点",
+          "acl": [ "工单查看" ],
+          "icon": {
+            "type": "icon",
+            "value": "database"
+          },
+          "link": "/node"
+        },
+        {
+          "text": "应用",
+          "icon": {
+            "type": "icon",
+            "value": "appstore"
+          },
+          "link": "/app"
+        },
+
+        {
+          "text": "客户端",
+          "icon": {
+            "type": "icon",
+            "value": "api"
+          },
+          "link": "/client"
+        },
+        {
+          "text": "日志",
+          "icon": {
+            "type": "icon",
+            "value": "mail"
+          },
+          "link": "/log"
+        },
+        {
+            "text": "用户",
+            "icon": {
+              "type": "icon",
+              "value": "user"
+            },
+            "link": "/user"
+          }
+      ]
+    }
+  ]
+}

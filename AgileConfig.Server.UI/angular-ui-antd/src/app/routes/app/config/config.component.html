@@ -1,0 +1,31 @@
+<page-header></page-header>
+<div>
+    <st #st [data]="url" [req]="{ lazyLoad: false }" resizable [loading]="false" [columns]="columns">
+        <ng-template st-row="group" let-i>
+            <div>
+                <ellipsis length="30">{{ i.group }}</ellipsis>
+                <a nz-icon nzType="copy" class="text-blue" (click)="copy(i.group)"></a>
+            </div>
+        </ng-template>
+        <ng-template st-row="key" let-i>
+            <div>
+                <ellipsis length="30">{{ i.key }}</ellipsis>
+                <a nz-icon nzType="copy" class="text-blue" (click)="copy(i.key)"></a>
+            </div>
+        </ng-template>
+        <ng-template st-row="value" let-i>
+            <div *ngIf="i.value">
+                <ellipsis length="30">{{ i.value }}</ellipsis>
+                <a nz-icon nzType="copy" class="text-blue" (click)="copy(i.value)"></a>
+            </div>
+        </ng-template>
+        <ng-template st-row="description" let-i>
+            <div>
+                <ellipsis length="30">{{ i.description }}</ellipsis>
+            </div>
+        </ng-template>
+        <ng-template st-row="updateTime" let-i>
+            <div *ngIf="i.updateTime" title="{{ i.updateTime }}">{{ i.updateTime | amTimeAgo }}</div>
+        </ng-template>
+    </st>
+</div>
