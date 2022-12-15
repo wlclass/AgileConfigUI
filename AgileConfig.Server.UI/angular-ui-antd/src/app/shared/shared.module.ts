@@ -10,6 +10,7 @@ import { MonacoEditorModule } from 'ngx-monaco-editor';
 
 import { AppAuthComponent } from './components/app-auth/app-auth.component';
 import { AppEditorComponent } from './components/app-editor/app-editor.component';
+import { ConfigGroupTreeComponent } from './components/config-group-tree/config-group-tree.component';
 import { ConfigItemEditorComponent } from './components/config-item-editor/config-item-editor.component';
 import { ConfigItemHistoryComponent } from './components/config-item-history/config-item-history.component';
 import { SHARED_DELON_MODULES } from './shared-delon.module';
@@ -23,7 +24,13 @@ const THIRDMODULES: Array<Type<void>> = [MomentModule, MonacoEditorModule];
 
 // #region your componets & directives
 
-const COMPONENTS: Array<Type<void>> = [ConfigItemEditorComponent, ConfigItemHistoryComponent, AppEditorComponent, AppAuthComponent];
+const COMPONENTS: Array<Type<void>> = [
+  ConfigGroupTreeComponent,
+  ConfigItemEditorComponent,
+  ConfigItemHistoryComponent,
+  AppEditorComponent,
+  AppAuthComponent
+];
 const DIRECTIVES: Array<Type<void>> = [];
 
 // #endregion

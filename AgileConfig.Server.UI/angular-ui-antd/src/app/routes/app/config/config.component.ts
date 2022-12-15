@@ -25,10 +25,23 @@ const 发布状态: STColumnBadge = {
 export class AppConfigComponent implements OnInit {
   constructor(public msg: NzMessageService, private router: Router, private http: _HttpClient) { }
 
+  envs = ['DEV', 'TEST', 'STAGING', 'PROD'];
   ngOnInit(): void { }
+  doPublish() { }
+  count = {
+    add: 10,
+    edit: 12,
+    del: 3
+  };
   url = `/config/search?env=DEV&appId=这是应用id&sortField=createTime&ascOrDesc=descend`;
+  params: any = {
+    appName: '测试应用',
+    env: 'DEV'
+  };
+
   columns: STColumn[] = [
-    { title: '环境', index: 'env', width: '80px' },
+    // { title: '环境', index: 'env', width: '80px' },
+    { title: '', type: 'checkbox', width: '50px' },
     { title: '组', index: 'group', render: 'group', width: '120px' },
     { title: '键', index: 'key', render: 'key', width: '150px' },
     { title: '值', index: 'value', render: 'value', width: '150px' },

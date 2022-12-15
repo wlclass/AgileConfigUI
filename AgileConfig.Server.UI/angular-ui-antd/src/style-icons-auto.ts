@@ -54,10 +54,12 @@ import {
   WeiboCircleOutline,
   AppstoreAddOutline,
   KeyOutline,
-  UndoOutline
+  UndoOutline,
+  MinusSquareOutline
 } from '@ant-design/icons-angular/icons';
 
 export const ICONS_AUTO = [
+  MinusSquareOutline,
   UndoOutline,
   KeyOutline,
   AppstoreAddOutline,
