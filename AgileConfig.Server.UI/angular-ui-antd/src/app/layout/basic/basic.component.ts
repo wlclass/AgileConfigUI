@@ -78,5 +78,5 @@ export class LayoutBasicComponent {
     return this.settings.user;
   }
 
-  constructor(private settings: SettingsService, private menuService: MenuService, private http: _HttpClient) { }
+  constructor(private settings: SettingsService, private menuService: MenuService, private http: _HttpClient) {}
 }

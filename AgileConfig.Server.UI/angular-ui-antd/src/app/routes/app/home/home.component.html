@@ -1,16 +1,16 @@
 <page-header></page-header>
 
 <div>
-    <st #st [data]="url" [req]="{ lazyLoad: false }" resizable [loading]="false" [columns]="columns">
-        <ng-template st-row="secret" let-i>
-            <div title="{{ i.secret }}">
-                <span *ngIf="!displaySecret[i.id]">******</span>
-                <span *ngIf="displaySecret[i.id]">{{ i.secret }}</span>
-                <nz-divider nzType="vertical"></nz-divider>
-                <a nz-icon nzType="eye" class="text-blue" (click)="toggleSecretDisplay(i.id)"></a>
-                <nz-divider nzType="vertical"></nz-divider>
-                <a nz-icon nzType="copy" class="text-blue" (click)="copy(i.secret)"></a>
-            </div>
-        </ng-template>
-    </st>
+  <st #st [data]="url" [req]="{ lazyLoad: false }" resizable [loading]="false" [columns]="columns">
+    <ng-template st-row="secret" let-i>
+      <div title="{{ i.secret }}">
+        <span *ngIf="!displaySecret[i.id]">******</span>
+        <span *ngIf="displaySecret[i.id]">{{ i.secret }}</span>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a nz-icon nzType="eye" class="text-blue" (click)="toggleSecretDisplay(i.id)"></a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a nz-icon nzType="copy" class="text-blue" (click)="copy(i.secret)"></a>
+      </div>
+    </ng-template>
+  </st>
 </div>

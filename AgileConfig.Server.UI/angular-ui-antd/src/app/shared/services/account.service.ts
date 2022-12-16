@@ -12,7 +12,7 @@ export class AccountService {
     public http: _HttpClient,
     @Inject(DA_SERVICE_TOKEN) private tokenService: TokenService,
     private agileConfigService: AgileConfigService
-  ) { }
+  ) {}
   loading = false;
 
   /**

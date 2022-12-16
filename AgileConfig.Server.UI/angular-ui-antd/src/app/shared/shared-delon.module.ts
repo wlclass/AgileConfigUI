@@ -7,12 +7,12 @@ import { SVModule } from '@delon/abc/sv';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 export const SHARED_DELON_MODULES = [
-    NzBreadCrumbModule,
-    EllipsisModule,
-    NzDividerModule,
-    PageHeaderModule,
-    STModule,
-    SEModule,
-    SVModule,
-    ResultModule
+  NzBreadCrumbModule,
+  EllipsisModule,
+  NzDividerModule,
+  PageHeaderModule,
+  STModule,
+  SEModule,
+  SVModule,
+  ResultModule
 ];

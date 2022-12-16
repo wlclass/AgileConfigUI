@@ -1,9 +1,9 @@
 <page-header></page-header>
 
 <div>
-    <st #st [data]="url" [req]="{ lazyLoad: false }" resizable [loading]="false" [columns]="columns">
-        <ng-template st-row="lastHeartbeatTime" let-i>
-            <div title="{{ i.lastHeartbeatTime }}">{{ i.lastHeartbeatTime | amTimeAgo }}</div>
-        </ng-template>
-    </st>
+  <st #st [data]="url" [req]="{ lazyLoad: false }" resizable [loading]="false" [columns]="columns">
+    <ng-template st-row="lastHeartbeatTime" let-i>
+      <div title="{{ i.lastHeartbeatTime }}">{{ i.lastHeartbeatTime | amTimeAgo }}</div>
+    </ng-template>
+  </st>
 </div>

@@ -9,4 +9,4 @@ const routes: Routes = [{ path: '', component: ClogHomeComponent }];
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ClogRoutingModule { }
+export class ClogRoutingModule {}

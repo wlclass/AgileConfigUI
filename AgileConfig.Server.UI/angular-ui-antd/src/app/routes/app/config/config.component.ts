@@ -1,3 +1,4 @@
+/* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { STColumn, STColumnBadge, STColumnTag } from '@delon/abc/st';
@@ -23,11 +24,13 @@ const 发布状态: STColumnBadge = {
   templateUrl: './config.component.html'
 })
 export class AppConfigComponent implements OnInit {
-  constructor(public msg: NzMessageService, private router: Router, private http: _HttpClient) { }
+  constructor(public msg: NzMessageService, private router: Router, private http: _HttpClient) {}
 
   envs = ['DEV', 'TEST', 'STAGING', 'PROD'];
-  ngOnInit(): void { }
-  doPublish() { }
+  publishStatus = [0, 1];
+
+  ngOnInit(): void {}
+  doPublish() {}
   count = {
     add: 10,
     edit: 12,
@@ -36,6 +39,7 @@ export class AppConfigComponent implements OnInit {
   url = `/config/search?env=DEV&appId=这是应用id&sortField=createTime&ascOrDesc=descend`;
   params: any = {
     appName: '测试应用',
+    onlineStatus: 'all',
     env: 'DEV'
   };
 

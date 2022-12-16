@@ -17,9 +17,9 @@ const ISPUBLICTAG: STColumnBadge = {
   templateUrl: './home.component.html'
 })
 export class AppHomeComponent implements OnInit {
-  constructor(public msg: NzMessageService, private router: Router, private http: _HttpClient) { }
+  constructor(public msg: NzMessageService, private router: Router, private http: _HttpClient) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
   url = `/app/search`;
   columns: STColumn[] = [
     { title: '名称', index: 'name', width: '120px' },

@@ -56,4 +56,4 @@ const PASSPORT = [LayoutPassportComponent];
   declarations: [...COMPONENTS, ...HEADERCOMPONENTS, ...PASSPORT],
   exports: [...COMPONENTS, ...PASSPORT]
 })
-export class LayoutModule { }
+export class LayoutModule {}

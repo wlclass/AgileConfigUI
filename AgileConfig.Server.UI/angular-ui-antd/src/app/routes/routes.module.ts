@@ -21,4 +21,4 @@ const COMPONENTS: Array<Type<void>> = [
   imports: [SharedModule, RouteRoutingModule],
   declarations: COMPONENTS
 })
-export class RoutesModule { }
+export class RoutesModule {}

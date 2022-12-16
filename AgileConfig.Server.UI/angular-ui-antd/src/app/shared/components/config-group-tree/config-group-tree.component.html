@@ -1,7 +1,15 @@
 <div> <nz-alert nzShowIcon nzType="info" nzMessage="节点右键菜单有惊喜"></nz-alert></div>
 <div>
-    <nz-tree #nzTreeComponent nzShowLine [nzData]="nodes" [nzCheckedKeys]="defaultCheckedKeys"
-        [nzExpandedKeys]="defaultExpandedKeys" [nzSelectedKeys]="defaultSelectedKeys" (nzClick)="nzClick($event)"
-        (nzContextMenu)="nzClick($event)" (nzCheckBoxChange)="nzCheck($event)"
-        (nzExpandChange)="nzCheck($event)"></nz-tree>
+  <nz-tree
+    #nzTreeComponent
+    nzShowLine
+    [nzData]="nodes"
+    [nzCheckedKeys]="defaultCheckedKeys"
+    [nzExpandedKeys]="defaultExpandedKeys"
+    [nzSelectedKeys]="defaultSelectedKeys"
+    (nzClick)="nzClick($event)"
+    (nzContextMenu)="nzClick($event)"
+    (nzCheckBoxChange)="nzCheck($event)"
+    (nzExpandChange)="nzCheck($event)"
+  ></nz-tree>
 </div>

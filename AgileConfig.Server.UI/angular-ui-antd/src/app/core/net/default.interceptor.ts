@@ -40,7 +40,7 @@ const CODEMESSAGE: any = {
  */
 @Injectable()
 export class DefaultInterceptor implements HttpInterceptor {
-  constructor(private injector: Injector) { }
+  constructor(private injector: Injector) {}
 
   private get msg(): NzMessageService {
     return this.injector.get(NzMessageService);

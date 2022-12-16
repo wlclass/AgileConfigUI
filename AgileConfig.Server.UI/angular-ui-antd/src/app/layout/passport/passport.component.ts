@@ -8,7 +8,7 @@ import { SettingsService } from '@delon/theme';
   styleUrls: ['./passport.component.less']
 })
 export class LayoutPassportComponent implements OnInit {
-  constructor(@Inject(DA_SERVICE_TOKEN) private tokenService: ITokenService, public settings: SettingsService) { }
+  constructor(@Inject(DA_SERVICE_TOKEN) private tokenService: ITokenService, public settings: SettingsService) {}
   links = [
     {
       title: '帮助',

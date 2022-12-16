@@ -10,7 +10,7 @@ import { Sysinfo } from '../models/sysinfo';
   providedIn: 'root'
 })
 export class AgileConfigService {
-  constructor(private http: _HttpClient) { }
+  constructor(private http: _HttpClient) {}
   // host = 'http://config.yw.justwei.com';
   host = '';
   /**

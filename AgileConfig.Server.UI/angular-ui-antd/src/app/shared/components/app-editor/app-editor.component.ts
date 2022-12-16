@@ -3,14 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-app-editor',
   templateUrl: './app-editor.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class AppEditorComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

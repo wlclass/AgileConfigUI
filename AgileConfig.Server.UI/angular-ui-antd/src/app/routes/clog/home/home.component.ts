@@ -7,9 +7,9 @@ import { _HttpClient } from '@delon/theme';
   templateUrl: './home.component.html'
 })
 export class ClogHomeComponent implements OnInit {
-  constructor(private http: _HttpClient) { }
+  constructor(private http: _HttpClient) {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
   url = `/syslog/search`;
   columns: STColumn[] = [
     { title: 'ID', index: 'id', width: '100px' },

@@ -7,9 +7,9 @@ import { NzTreeComponent, NzTreeNodeOptions, NzFormatEmitEvent } from 'ng-zorro-
   styles: []
 })
 export class ConfigGroupTreeComponent implements OnInit {
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
   @ViewChild('nzTreeComponent', { static: false }) nzTreeComponent!: NzTreeComponent;
   defaultCheckedKeys = ['10020'];
   defaultSelectedKeys = ['10010'];

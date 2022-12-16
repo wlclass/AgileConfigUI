@@ -3,14 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-config-item-editor',
   templateUrl: './config-item-editor.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class ConfigItemEditorComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
